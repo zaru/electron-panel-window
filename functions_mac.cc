@@ -38,7 +38,7 @@ NAN_METHOD(MakePanel) {
   // Ensure that the window can display over the top of fullscreen apps
   [mainContentView.window setCollectionBehavior: NSWindowCollectionBehaviorTransient | NSWindowCollectionBehaviorMoveToActiveSpace | NSWindowCollectionBehaviorFullScreenAuxiliary ];
   [mainContentView.window setLevel:NSFloatingWindowLevel];
-  [mainContentView.window setFloatingPanel:YES];
+  // [mainContentView.window setFloatingPanel:YES];
   return info.GetReturnValue().Set(true);
 }
 
